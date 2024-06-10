@@ -1,0 +1,16 @@
+OCR-Cleaning-Data-Set/
+├── Cleaning-DataSet-One/  
+|   ├── bin
+|   └── lib
+|   └── include 
+|   └── share
+|   └── src           
+├── image/                 
+│   |── Hii.jpg  
+|   |── image.jpg
+|   |── image.png
+|   |── preview.jpg
+|   └── preview.png
+├── src/                   
+│   └── testing_mode.py                      
+└── README.md             
