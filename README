@@ -1,3 +1,16 @@
+-------------------------------------------------------------------
+|                          HOW TO USE IT                          |
+-------------------------------------------------------------------
+|                  'Set Up Environment of Python'                 |
+-------------------------------------------------------------------
+|                      'Running this command'                     |
+|    (for using  library"cv2", "easyocr", "matplotlib.pyplot")    |
+|       --->pip install opencv-python easyocr matplotlib<---      | 
+-------------------------------------------------------------------
+
+
+
+
 OCR-Cleaning-Data-Set/
 ├── Cleaning-DataSet-One/  
 |   ├── bin
