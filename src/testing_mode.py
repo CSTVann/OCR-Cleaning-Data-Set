@@ -13,7 +13,7 @@ def draw_bounding_boxes(image, detections, threshold=0.25):
             cv2.putText(image, text, tuple(map(int, bbox[0])), cv2.FONT_HERSHEY_COMPLEX_SMALL, font_scale, (255, 0, 0), 2)
 
 # Set the relative path to the image file
-image_path = "image/image.jpg"
+image_path = "image/TestingWCT_Scope.png"
 
 # Load the image
 img = cv2.imread(image_path)
@@ -23,6 +23,13 @@ if img is None:
 # Perform OCR using EasyOCR
 reader = easyocr.Reader(['en'], gpu=False)
 text_detections = reader.readtext(img)
+
+# Print detected text to the terminal
+counted_text = 0
+for bbox, text, score in text_detections:
+    if score > 0.25:
+        counted_text += len(text.split())
+print(f'Number of words: {counted_text-1}')
 
 # Print detected text to the terminal
 for bbox, text, score in text_detections:
